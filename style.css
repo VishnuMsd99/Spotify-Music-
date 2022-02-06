@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+    background-color:rgb(64, 64, 53);
+    
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* Nav bar styling */
+
+nav{
+    font-family: 'Righteous', cursive;
+}
+
+.sideBar{
+    height: 100%;
+    width:20%;
+    position: fixed;
+    background-color: black;
+    color:white;
+    list-style: none;
+}
+.brand img{
+    margin-left:10px;
+    width: 125px;
+    height: 65px;
+    align-items: center;
+
+}
+.brand{
+display:flex;
+align-items: center;
+color: white;
+cursor:pointer;
+font-size: 30px;
+font-weight:bold;
+text-decoration: none;
+
+}
+.side{
+    width:15%;
+    height:100%;
+    position: fixed;
+    color:white;
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+
+
+
+.side div i{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+    width:fit-content;
+    flex-wrap: wrap;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: 3rem;
+}
+.side div a{
+    display: flex;
+    align-items: center;
+    margin-bottom:-22px;
+    width:fit-content;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.side div p:hover{
+    color: rgb(199, 191, 191);
+}
+.nav{
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    border:yellow;
+    position:fixed;
+    width: 80%;
+    height: 67px;
+    margin-left: 20%;
+    top: 0;
+
+}
+.items{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-left: 51%;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.btn1{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    width:545px;
+    border-radius: 27px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255,255,255,.7);
+    font-size: 13px!important;
+    font-weight: 700;
+    cursor: pointer;
+    transition:  .4s;
+
+
+
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin-left: 119px;
+    padding: 10px;
+    border-radius: 27px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255,255,255,.7);
+    font-size: 13px!important;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn2 i{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.btn1:hover { 
+    transform: scale(1.1); 
+}
+.btn2:hover { 
+    background-color: rgb(51, 48, 48);
+}
+.container{
+    display: flex;
+    background-color: rgb(37, 35, 35);
+    flex-wrap: wrap;
+    position:fixed;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 0;
+    overflow: scroll;
+    
+
+}
+
+.background{
+    background-color: rgb(29, 30, 31);
+    min-width: 260px;
+    max-height: 305px;
+    margin-left: 50px;
+    margin-top: 85px;
+}
+.background :hover{
+    background-color: rgb(42, 44, 46);
+}
+.songImg{
+    width: 195px;
+    height: 180px;
+    border-radius: 20px;
+    padding: 25px 35px 15px 35px;
+    
+}
+.songInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    margin-top: -10px;
+}
+.songInfo i{
+    font-size: 24px;
+    margin-left: 162px;
+    margin-top: -27px;
+}
+.songItemPlay{
+    margin-bottom: 4px;
+}
+
+.bottom{
+    position: fixed;
+    height: 105px;
+    background-color: rgba(19, 20, 19, 0.89);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 405px 0 0 0;
+}
+#progressBar{
+    width:80vw;
+    cursor: pointer;
+}
+.icons{
+    font-size:1.5rem;
+    margin-top:20px;
+    cursor:pointer;
+}
+#songPlay{
+    position: absolute;
+    left: 10vw;
+
+
+} 
+
+
+
+/* /// media quries////// */
+
+@media (max-width: 1000px) {
+    .items, .side, hr{
+        display: none;
+    }
+    .sideBar{
+        height:10vh;
+        width:100%;
+        background-color: rgb(26, 25, 25);
+    }
+    .container{
+        width: 100%;
+        height: 530px;
+        display: flex;
+        margin-left: 0;
+        margin-right: 5px;
+        justify-content: center;
+       
+    }
+    .brand img{
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 2px;
+        width: 100px;
+    }
+    .bottom{
+        margin: 530px 0 0 0;
+
+    }
+    .nav{
+        display:none;
+    }
+  }
+
+
+ 
+/* nav ul{
+    display:flex;
+    align-items: center;
+    list-style:none;
+    height:75px;
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
+
+
+nav ul li{
+    padding: 1rem;
+}
+.brand img{
+    width:107px;
+    height:65px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.brand{
+    display:flex;
+    align-items:center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+} */
+
+/* bottom */
+
+/* .container{
+    min-height: 68vh;
+    max-height: 80vh;
+    color: white;
+    font-family:sans-serif;
+    display:flex;
+    width:70%;
+    border-radius: 10px;
+    margin: 23px auto;
+    background-image: url("assets/Music background.jpg");
+    background-size: cover;
+    
+}
+
+#progressBar{
+    width:80vw;
+    cursor: pointer;
+}
+.icons{
+    font-size:2rem;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.songItem{
+    width: 250px;
+    display:flex;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    align-items:center;
+    margin:35px auto;
+    padding:2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.songItem:hover{
+    background-color: rgba(58, 209, 71, 0.89);
+    color: white;
+    
+    
+}
+.songItem img{
+    width:45px;
+    height:45px;
+    border-radius: 50px;
+}
+.songList{
+    margin:1rem 20px;
+}
+.timeStamp{
+    margin: 0 25px;
+}
+.songItem2{
+    width: 250px;
+    display:flex;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    align-items:center;
+    margin:35px auto;
+    padding:2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.songItem2:hover{
+    background-color: rgba(58, 209, 71, 0.89);
+    color: white;
+    
+    
+}
+.songItem2 img{
+    width:45px;
+    height:45px;
+    border-radius: 50px;
+}
+.songList2{
+    margin:3.9rem 20px;
+    margin-left: 18rem;
+}
+#songPlay{
+    position: absolute;
+    left: 10vw;
+
+} */
